@@ -31,7 +31,7 @@ These example contributions are adapted from CRediT (Contributor Roles Taxonomy)
 * Formal analysis: Application of statistical, mathematical, computational, or other formal techniques to analyze or synthesize study data.
 * Funding acquisition: Acquisition of the financial support for the project leading to this publication.
 * Investigation: Conducting a research and investigation process, specifically performing the experiments, or data/evidence collection.
-* Methodology: Development or design of methodology; creation of models.
+* Methodology: Development or design of methodology
 * Project administration – Management and coordination responsibility for the research activity planning and execution.
 * Resources: Provision of study materials, reagents, materials, patients, laboratory samples, animals, instrumentation, computing resources, or other analysis tools.
 * Software: Programming, software development; designing computer programs; implementation of the computer code and supporting algorithms; testing of existing code components.
@@ -42,4 +42,62 @@ These example contributions are adapted from CRediT (Contributor Roles Taxonomy)
 * Writing – review & editing: Preparation, creation and/or presentation of the published work by those from the original research group, specifically critical review, commentary or revision – including pre- or post-publication stages.
 
 -----
-**PLEASE REMOVE THIS LINE AND EDIT BELOW**
+
+## Arnav VERMA
+
+* Conceptualization: Ideas; formulation or evolution of overarching research goals and aims.
+* Data curation: Management activities to annotate (produce metadata), scrub data and maintain research data (including software code, where it is necessary for interpreting the data itself) for initial use and later re-use.
+* Formal analysis: Application of statistical, mathematical, computational, or other formal techniques to analyze or synthesize study data.
+* Investigation: Conducting a research and investigation process, specifically performing the experiments, or data/evidence collection.
+* Methodology: Development or design of methodology
+* Project administration – Management and coordination responsibility for the research activity planning and execution.
+* Resources: Provision of study materials, reagents, materials, patients, laboratory samples, animals, instrumentation, computing resources, or other analysis tools.
+* Software: Programming, software development; designing computer programs; implementation of the computer code and supporting algorithms; testing of existing code components.
+* Validation: Verification, whether as a part of the activity or separate, of the overall replication/reproducibility of results/experiments and other research outputs.
+* Visualization: Preparation, creation and/or presentation of the published work, specifically visualization/data presentation.
+* Writing – original draft: Preparation, creation and/or presentation of the published work, specifically writing the initial draft (including substantive translation).
+* Writing – review & editing: Preparation, creation and/or presentation of the published work by those from the original research group, specifically critical review, commentary or revision – including pre- or post-publication stages.
+
+## Kushin MUKHERJEE
+
+* Methodology: Development or design of methodology
+* Project administration – Management and coordination responsibility for the research activity planning and execution.
+* Writing – original draft: Preparation, creation and/or presentation of the published work, specifically writing the initial draft (including substantive translation).
+* Writing – review & editing: Preparation, creation and/or presentation of the published work by those from the original research group, specifically critical review, commentary or revision – including pre- or post-publication stages.
+
+## Christopher POTTS
+
+* Conceptualization: Ideas; formulation or evolution of overarching research goals and aims.
+* Funding acquisition: Acquisition of the financial support for the project leading to this publication.
+* Methodology: Development or design of methodology
+* Project administration – Management and coordination responsibility for the research activity planning and execution.
+* Resources: Provision of study materials, reagents, materials, patients, laboratory samples, animals, instrumentation, computing resources, or other analysis tools.
+* Supervision: Oversight and leadership responsibility for the research activity planning and execution, including mentorship external to the core team.
+* Writing – review & editing: Preparation, creation and/or presentation of the published work by those from the original research group, specifically critical review, commentary or revision – including pre- or post-publication stages.
+
+## Elisa KREISS
+
+* Conceptualization: Ideas; formulation or evolution of overarching research goals and aims.
+* Formal analysis: Application of statistical, mathematical, computational, or other formal techniques to analyze or synthesize study data.
+* Funding acquisition: Acquisition of the financial support for the project leading to this publication.
+* Investigation: Conducting a research and investigation process, specifically performing the experiments, or data/evidence collection.
+* Methodology: Development or design of methodology
+* Project administration – Management and coordination responsibility for the research activity planning and execution.
+* Resources: Provision of study materials, reagents, materials, patients, laboratory samples, animals, instrumentation, computing resources, or other analysis tools.
+* Supervision: Oversight and leadership responsibility for the research activity planning and execution, including mentorship external to the core team.
+* Writing – review & editing: Preparation, creation and/or presentation of the published work by those from the original research group, specifically critical review, commentary or revision – including pre- or post-publication stages.
+
+## Judith FAN
+
+* Conceptualization: Ideas; formulation or evolution of overarching research goals and aims.
+* Formal analysis: Application of statistical, mathematical, computational, or other formal techniques to analyze or synthesize study data.
+* Funding acquisition: Acquisition of the financial support for the project leading to this publication.
+* Investigation: Conducting a research and investigation process, specifically performing the experiments, or data/evidence collection.
+* Methodology: Development or design of methodology
+* Project administration – Management and coordination responsibility for the research activity planning and execution.
+* Resources: Provision of study materials, reagents, materials, patients, laboratory samples, animals, instrumentation, computing resources, or other analysis tools.
+* Supervision: Oversight and leadership responsibility for the research activity planning and execution, including mentorship external to the core team.
+* Validation: Verification, whether as a part of the activity or separate, of the overall replication/reproducibility of results/experiments and other research outputs.
+* Visualization: Preparation, creation and/or presentation of the published work, specifically visualization/data presentation.
+* Writing – original draft: Preparation, creation and/or presentation of the published work, specifically writing the initial draft (including substantive translation).
+* Writing – review & editing: Preparation, creation and/or presentation of the published work by those from the original research group, specifically critical review, commentary or revision – including pre- or post-publication stages.
