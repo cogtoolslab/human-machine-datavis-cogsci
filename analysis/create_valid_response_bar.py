@@ -1,24 +1,17 @@
 import pandas as pd
 import numpy as np
 import altair as alt
-from evaluation_metrics import EvaluationMetrics
 from aws_upload import upload_file_to_s3
 import os
-from evaluation_metrics import EvaluationMetrics
+from utils import read_model_configs, extract_numerical_responses
 
 AWS_PREFIX = "https://data-visualization-benchmark.s3.us-west-2.amazonaws.com"
 
-def process_extracted_responses(model_configs, prompt_type='indist_instructions_question'):
-    test_types = [
-        "ggr",
-        "vlat",
-        "holf",
-        'calvi-trick',
-        'calvi-standard',
-        'holf2',
-        'chartqa-test-continuous',
-        # 'chartqa-test-continuous-human',
-    ]
+def process_extracted_responses(
+        model_configs, 
+        test_types, 
+        prompt_type='indist_instructions_question'
+    ):
 
     model_responses = []
     for model_config in model_configs:
@@ -44,14 +37,12 @@ def process_extracted_responses(model_configs, prompt_type='indist_instructions_
 
     questions = pd.concat(questions)
 
-    metric = EvaluationMetrics()
-
     def find_non_floats(r):
         if r['res_len'] <= 2:
             res = str(r['agent_response'])
             res = res.replace(" ", "")
             res = res.replace(",", "")
-            extracted_response = metric.extract_numerical_responses(res)
+            extracted_response = extract_numerical_responses(res)
             if extracted_response:
                 return extracted_response[0]
             else:
@@ -168,18 +159,12 @@ def process_extracted_responses(model_configs, prompt_type='indist_instructions_
 
 
 if __name__ == "__main__":
-    model_configs = [
-        {'model': "GPT-4V", 'top_p': 'p1', 'temp': 't02', 'color': '#b85536', 'accent_color': '#b85536'},
-        {'model': "Salesforce/blip2-flan-t5-xl", 'top_p': 'p06', 'temp': 't1', 'color': '#5ba3cf', 'accent_color': '#5ba3cf'},
-        {'model': "Salesforce/blip2-flan-t5-xxl", 'top_p': 'p1', 'temp': 't10', 'color': '#4c78a8', 'accent_color': '#4c78a8'},
-        {'model': "llava-hf/llava-1.5-7b-hf", 'top_p': 'p04', 'temp': 't1', 'color': '#f9b574', 'accent_color': '#f9b574'},
-        {'model': "llava-hf/llava-1.5-13b-hf", 'top_p': 'p1', 'temp': 't04', 'color': '#f58518', 'accent_color': '#f58518'},
-        {'model': "liuhaotian/llava-v1.6-34b", 'top_p': 'p1', 'temp': 't04', 'color': '#F1C232', 'accent_color': '#BF9000'},
-        {'model': "google/pix2struct-chartqa-base", 'top_p': 'p08', 'temp': 't1', 'color': '#b9a7d0', 'accent_color': '#b9a7d0'},
-        {'model': "google/matcha-chartqa", 'top_p': 'p04', 'temp': 't1', 'color': '#8b6db2', 'accent_color': '#8b6db2'},
-        {'model': "Human/Math-2-1", 'top_p': 'pna', 'temp': 'tna', 'color': '#639460', 'accent_color': '#C8EBC6'},
-        {'model': "Human/Math-3", 'top_p': 'pna', 'temp': 'tna', 'color': '#2e693b', 'accent_color': '#73D287'},
+    model_configs = read_model_configs()
+    test_types = [
+        "ggr",
+        "vlat",
+        "holf",
     ]
 
-    process_extracted_responses(model_configs=model_configs)
+    process_extracted_responses(model_configs=model_configs, test_types=test_types)
     

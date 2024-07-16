@@ -1,18 +1,43 @@
 import pandas as pd
+import re
 
 def read_model_configs():
+    # tacl configs
+    # model_configs = [
+    #     {'model': "Salesforce/blip2-flan-t5-xl", 'top_p': 'p06', 'temp': 't1', 'color': '#5ba3cf', 'accent_color': '#8cbedd'},
+    #     {'model': "Salesforce/blip2-flan-t5-xxl", 'top_p': 'p1', 'temp': 't10', 'color': '#4c78a8', 'accent_color': '#81a0c2'},
+    #     {'model': "llava-hf/llava-1.5-7b-hf", 'top_p': 'p04', 'temp': 't1', 'color': '#f9b574', 'accent_color': '#facb9d'},
+    #     {'model': "llava-hf/llava-1.5-13b-hf", 'top_p': 'p1', 'temp': 't04', 'color': '#f58518', 'accent_color': '#f79d46'},
+    #     {'model': "liuhaotian/llava-v1.6-34b", 'top_p': 'p1', 'temp': 't04', 'color': '#BF9000', 'accent_color': '#F1C232'},
+    #     {'model': "google/pix2struct-chartqa-base", 'top_p': 'p08', 'temp': 't1', 'color': '#ba94c4', 'accent_color': '#c7b8d9'},
+    #     {'model': "google/matcha-chartqa", 'top_p': 'p04', 'temp': 't1', 'color': '#8b6db2', 'accent_color': '#a28ac1'},
+    #     {'model': "GPT-4V", 'top_p': 'p1', 'temp': 't02', 'color': '#c93739', 'accent_color': '#C6765E'},
+    #     {'model': "Human", 'top_p': 'pna', 'temp': 'tna', 'color': '#2e693b', 'accent_color': '#73D287'},
+    # ]
+
+    # cogsci configs
     model_configs = [
-        {'model': "Salesforce/blip2-flan-t5-xl", 'top_p': 'p06', 'temp': 't1', 'color': '#5ba3cf', 'accent_color': '#8cbedd'},
-        {'model': "Salesforce/blip2-flan-t5-xxl", 'top_p': 'p1', 'temp': 't10', 'color': '#4c78a8', 'accent_color': '#81a0c2'},
-        {'model': "llava-hf/llava-1.5-7b-hf", 'top_p': 'p04', 'temp': 't1', 'color': '#f9b574', 'accent_color': '#facb9d'},
-        {'model': "llava-hf/llava-1.5-13b-hf", 'top_p': 'p1', 'temp': 't04', 'color': '#f58518', 'accent_color': '#f79d46'},
-        {'model': "liuhaotian/llava-v1.6-34b", 'top_p': 'p1', 'temp': 't04', 'color': '#BF9000', 'accent_color': '#F1C232'},
-        {'model': "google/pix2struct-chartqa-base", 'top_p': 'p08', 'temp': 't1', 'color': '#ba94c4', 'accent_color': '#c7b8d9'},
-        {'model': "google/matcha-chartqa", 'top_p': 'p04', 'temp': 't1', 'color': '#8b6db2', 'accent_color': '#a28ac1'},
-        {'model': "GPT-4V", 'top_p': 'p1', 'temp': 't02', 'color': '#c93739', 'accent_color': '#C6765E'},
-        {'model': "Human", 'top_p': 'pna', 'temp': 'tna', 'color': '#2e693b', 'accent_color': '#73D287'},
+        {'model': "llava-hf/llava-1.5-7b-hf", 'top_p': 'p04', 'temp': 't1', 'color': '#f9b574', 'accent_color': '#f9b574'},
+        {'model': "Salesforce/blip2-flan-t5-xl", 'top_p': 'p04', 'temp': 't1', 'color': '#5ba3cf', 'accent_color': '#5ba3cf'},
+        {'model': "Salesforce/blip2-flan-t5-xxl", 'top_p': 'p04', 'temp': 't1', 'color': '#4c78a8', 'accent_color': '#4c78a8'},
+        {'model': "GPT-4V", 'top_p': 'p04', 'temp': 't1', 'color': '#b85536', 'accent_color': '#b85536'},
+        {'model': "Human/Math-2-1", 'top_p': 'pna', 'temp': 'tna', 'color': '#639460', 'accent_color': '#C8EBC6'},
+        {'model': "Human/Math-3", 'top_p': 'pna', 'temp': 'tna', 'color': '#2e693b', 'accent_color': '#73D287'},
     ]
+
     return model_configs
+
+def extract_numerical_responses(word):
+    """Extract all numbers from the response."""
+    # remove all commas for example 1,000 -> 1000
+    num_answer = str(word).replace(",", "")
+
+    # find all negative numbers and decimals 
+    pattern = r'-?\d+(\.\d+)?'
+    all_numbers = list(re.finditer(pattern, num_answer))
+    all_numbers = [float(num.group()) for num in all_numbers if num != '']
+
+    return all_numbers
 
 def get_all_test_types():
     return ['ggr', 'vlat', 'holf', 'calvi-trick', 'holf2', 'chartqa-test-continuous']
