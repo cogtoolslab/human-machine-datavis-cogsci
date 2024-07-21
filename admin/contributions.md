@@ -79,7 +79,6 @@ These example contributions are adapted from CRediT (Contributor Roles Taxonomy)
 
 * Conceptualization: Ideas; formulation or evolution of overarching research goals and aims.
 * Funding acquisition: Acquisition of the financial support for the project leading to this publication.
-* Investigation: Conducting a research and investigation process, specifically performing the experiments, or data/evidence collection.
 * Methodology: Development or design of methodology
 * Project administration – Management and coordination responsibility for the research activity planning and execution.
 * Resources: Provision of study materials, reagents, materials, patients, laboratory samples, animals, instrumentation, computing resources, or other analysis tools.

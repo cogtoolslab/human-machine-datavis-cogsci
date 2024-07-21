@@ -8,10 +8,10 @@ Directory Structure
 ├── admin
 ├── analysis
 ├── data
-├── paper
 ├── experiments
 │   ├── api  
 │   ├── model_inference
+├── paper
 ├── results
 │   ├── dataframe
 │   ├── figures
@@ -21,7 +21,7 @@ Directory Structure
 │   ├── holf
 ```
 
-Each folder contains a README.md file which elaborate futher on the contents of the folder. Please find the general descriptions of each folder below:
+Each folder contains a README.md file which elaborates further on the contents of that folder. Please find the general descriptions of each folder below:
 
 `admin` contain describes author contributions
 
@@ -34,6 +34,8 @@ Each folder contains a README.md file which elaborate futher on the contents of 
 `paper` contains the pdfs for the orginial and corrected version our paper.
 
 `results` contains the dataframes (csv files) and unedited figures for all plots in the paper.
+
+`stimuli` contains the test items and instructions given to humans and machines.
 
 BibTeX Citation:
 ```

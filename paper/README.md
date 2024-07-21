@@ -1,5 +1,7 @@
 Two corrections have been made in the paper `vlm_datavis_benchmark_cogsci2024.pdf` and have been listed under `vlm_datavis_benchmark_corrected_cogsci2024.pdf`.
 
+## Errata
+
 ## Subsection: Model evaluation procedure, Paragraph 2.
 **Orignal text**: "We sampled outputs from each model using nucleus sampling (temperature = $0.1$; top-$p$ = 0.4), a commonly used technique for improving the diversity and fluency of language model outputs"
 **Corrected text**: "We sampled outputs from each model using nucleus sampling (temperature = $1$; top-$p$ = 0.4), a commonly used technique for improving the diversity and fluency of language model outputs"
