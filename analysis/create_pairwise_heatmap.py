@@ -134,11 +134,14 @@ class PairwiseHeatmap:
 
             # agents = common_responses[["agentType_B", "agentType_A"]].copy()
             # agents[self.units_of_measure] = normalized_errors
+            _dir = "../results/dataframe/pairwise_heatmap_responses"
+            if not os.path.exists(_dir):
+                os.makedirs(_dir)
             common_responses[self.units_of_measure] = normalized_errors
             if self.source == "model_responses":
-                common_responses.to_csv(f"./heatmap/between_prompt_pairwise/{self.test_type}_all_pairwise.csv")
+                common_responses.to_csv(f"{_dir}/{self.test_type}_all_pairwise.csv")
             elif self.source == "processed_extracted_responses":
-                common_responses.to_csv(f"./heatmap/{self.test_type}_all_pairwise.csv")
+                common_responses.to_csv(f"{_dir}/{self.test_type}_all_pairwise.csv")
 
             df = common_responses.groupby(["agentType_B", "agentType_A"])[self.units_of_measure].median().reset_index()
 
@@ -195,10 +198,14 @@ class PairwiseHeatmap:
             # agents[self.units_of_measure] = jaccard_similarities
             common_responses[self.units_of_measure] = jaccard_similarities
 
+            _dir = "../results/dataframe/pairwise_heatmap_responses"
+            if not os.path.exists(_dir):
+                os.makedirs(_dir)
+
             if self.source == "model_responses":
-                common_responses.to_csv(f"./heatmap/between_prompt_pairwise/{self.test_type}_all_pairwise.csv")
+                common_responses.to_csv(f"{_dir}/{self.test_type}_all_pairwise.csv")
             elif self.source == "processed_extracted_responses":
-                common_responses.to_csv(f"./heatmap/{self.test_type}_all_pairwise.csv")
+                common_responses.to_csv(f"{_dir}/{self.test_type}_all_pairwise.csv")
 
             print("calculating jaccard similarity4")
             
@@ -305,12 +312,18 @@ if __name__ == '__main__':
         print("Matrix created")
         
         _df_dir = "../results/dataframe/pairwise_heatmap_df"
+        if not os.path.exists(_df_dir):
+            os.makedirs(_df_dir)
+
         file = f"{_df_dir}/pairwise_heatmap_df_{test_type}.csv"
         matrix.to_csv(file)
 
         # print("Creating heatmap...")
         chart = heatmap.create_pairwise_agent_heatmap(matrix)
         _dir = "../results/figures/pairwise_heatmap"
+        if not os.path.exists(_dir):
+            os.makedirs(_dir)
+
         filename = f"{_dir}/pairwise_heatmap_{test_type}.pdf"
         print("Saving...", filename)
         chart.save(filename)
