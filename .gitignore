@@ -3,8 +3,8 @@
 .ipynb_checkpoints/
 # *.csv
 *.json
-*.pdf
-# *.png
+# *.pdf
+*.png
 *.jpeg
 *.jpg
 *.tiff
@@ -51,12 +51,12 @@ __pycache__/
 *.fls
 *.log
 *.synctex.gz
-*.pdf
+# *.pdf
 
 .DS_Store
 # *.csv
 *.json
-*.pdf
+# *.pdf
 # *.png
 *.jpeg
 *.jpg
