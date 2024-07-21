@@ -6,8 +6,9 @@ Directory Structure
 
 ```bash
 ├── admin
-├── paper
 ├── analysis
+├── data
+├── paper
 ├── experiments
 │   ├── api  
 │   ├── model_inference
@@ -20,20 +21,28 @@ Directory Structure
 │   ├── holf
 ```
 
-`paper` contains the pdf for the orginial and corrected version our paper.
+Each folder contains a README.md file which elaborate futher on the contents of the folder. Please find the general descriptions of each folder below:
 
-`analysis` contains 3 main files -
+`admin` contain describes author contributions
 
-3. `environment.yml` specifies a conda environment with the appropriate packages to reproduce our code. We recommend creating a new conda environment using the following command:
-   ```
-   conda env create -f environment.yml
-   ```
-`experiments` contains 2 subfolders -
-`category-selfpaced` contains code and materials for the human sketch production experiment
-`recognition` contains code and maetrials for the human sketch recognition experiment
+`analysis` contains all python scripts and notebooks used to  calculate statistics and generate figures reported in the paper.
 
-`results` contains a subdirectory called `plots` which is where the jupyter notebooks will save plots that are generated.
+`data` contains instructions on how to download the data model and human responses to all items.
 
-`data` will need to contain intermediate outputs, which serve as input for the R markdown and jupyter notebooks. Please place the contents found inside the `recog_exp_data` folder <a href="https://www.dropbox.com/scl/fo/2oqncsagow0k7sbn52pd1/h?dl=0&rlkey=i7ezf9lezft7o0amawb24zlvd" target="_blank">here</a>
- inside the `data` directory running any notebook cells. Refer to the README.md in the `data` directory for more details.
+`experiments` contains the server api code used to save model responses during evaluations and the code to evaluate vision-language models. 
+
+`paper` contains the pdfs for the orginial and corrected version our paper.
+
+`results` contains the dataframes (csv files) and unedited figures for all plots in the paper.
+
+BibTeX Citation:
+```
+@inproceedings{verma2024evaluating,
+  title={Evaluating human and machine understanding of data visualizations},
+  author={Verma, Arnav and Mukherjee, Kushin and Potts, Christopher and Kreiss, Elisa and Fan, Judith E},
+  booktitle={Proceedings of the Annual Meeting of the Cognitive Science Society},
+  volume={46},
+  year={2024}
+}
+```
 
