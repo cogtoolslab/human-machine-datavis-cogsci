@@ -1,6 +1,6 @@
 # Evaluating human and machine understanding of data visualizations
 
-This repository contains code to reproduce the results in our CogSci 2024 paper, *Evaluating human and machine understanding of data visualizations*
+This repository contains code to reproduce the results in our CogSci 2024 paper, [*Evaluating human and machine understanding of data visualizations*](/paper/vlm_datavis_benchmark_corrected_cogsci2024.pdf)
 
 Directory Structure
 
