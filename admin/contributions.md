@@ -78,7 +78,6 @@ These example contributions are adapted from CRediT (Contributor Roles Taxonomy)
 ## Elisa KREISS
 
 * Conceptualization: Ideas; formulation or evolution of overarching research goals and aims.
-* Formal analysis: Application of statistical, mathematical, computational, or other formal techniques to analyze or synthesize study data.
 * Funding acquisition: Acquisition of the financial support for the project leading to this publication.
 * Investigation: Conducting a research and investigation process, specifically performing the experiments, or data/evidence collection.
 * Methodology: Development or design of methodology
