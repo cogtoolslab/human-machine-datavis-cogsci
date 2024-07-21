@@ -21,7 +21,7 @@ Directory Structure
 │   ├── holf
 ```
 
-Each folder contains a README.md file which elaborates further on the contents of that folder. Please find the general descriptions of each folder below:
+Each folder contains a README.md file that elaborates on its contents. Please find the general descriptions of each folder below:
 
 `admin` contain describes author contributions
 
