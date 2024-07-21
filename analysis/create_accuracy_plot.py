@@ -66,17 +66,8 @@ class AccuracyPlot:
                 lambda r: self.evaluation_metric.a_in_b(r['correct_answer'], r['agent_response']), axis=1
             )
 
-        # if self.is_numerical_test:
-            # self.model_responses["absolute_error"] = self.model_responses.apply(
-            #     lambda r: self.evaluation_metric.get_absolute_error(r['agent_response'], r['correct_answer']), axis=1
-            # )
-            # self.model_responses = self.model_responses.dropna(subset=["absolute_error"])
-        
         if self.units_of_measure == "minmax_axis_normalized_error":
-            # self.model_responses["agent_response"] = self.model_responses.apply(
-            #     lambda r : self.evaluation_metric.get_best_numerical_response(r["agent_response"], r["correct_answer"]),
-            #     axis=1
-            # ).dropna()
+
             self.model_responses["agent_response"] = self.model_responses["agent_response"].astype(float)
 
             if relax_value > 0:
@@ -100,38 +91,9 @@ class AccuracyPlot:
                 lambda r: self.evaluation_metric.minmax_normalized_error(r['error'], r['min_label'], r['max_label']), axis=1
             )
 
-            
-
-            # self.max_point = 2
-
-            # self.model_responses = self.model_responses[self.model_responses[self.units_of_measure] < self.max_point]
-
-            # p25 = self.model_responses[self.units_of_measure].quantile(0.025)
-            # p75 = self.model_responses[self.units_of_measure].quantile(0.975)
-            # self.model_responses = self.model_responses[
-            #     (self.model_responses[self.units_of_measure] >= p25) & 
-            #     (self.model_responses[self.units_of_measure] <= p75)
-            # ]
-
-            # self.model_responses[self.units_of_measure] = self.model_responses.apply(
-            #     lambda r: self.evaluation_metric.minmax_normalized_error(r['absolute_error'], 0, 100), axis=1
-            # )
             self.model_responses = self.model_responses.dropna(subset=["minmax_axis_normalized_error"])
         
         self.model_config = model_config
-        # try: 
-        #     self.human_responses = pd.read_csv(f'{self.AWS_PREFIX}/{testName}/responses/human_responses.csv')
-        #     self.human_responses = self.human_responses.rename({
-        #         "imageFile": "image_file"
-        #     }, axis=1)
-        #     human_agents = self.human_responses["agentType"].unique()
-        #     if 'Human/Math-2-1' in human_agents:
-        #         self.model_config.append(('Human/Math-2-1', '#639460', '#C8EBC6'))
-        #     if 'Human/Math-3' in human_agents:
-        #         self.model_config.append(('Human/Math-3', '#2e693b', '#73D287'))
-        #     if 'Human' in human_agents:
-        #         self.model_config.append(('Human', '#2e693b', '#73D287'))
-        # except:
 
         self.human_responses = None
         
@@ -240,7 +202,10 @@ class AccuracyPlot:
                 ci_df = pd.read_csv(f'./ci_df/{self.test_name}.csv')
             except:
                 ci_df = self.create_confidence_interval_df(self.model_responses, statistic=statistic)
-                ci_df.to_csv(f'./ci_df/{self.test_name}.csv')
+                _dir = "../results/dataframe/accuracy_ci_df"
+                if not os.path.exists(_dir):
+                    os.makedirs(_dir)
+                ci_df.to_csv(f'{_dir}/{self.test_name}.csv')
 
             error_bars = alt.Chart(ci_df).mark_errorbar().encode(
                 x=alt.X("agentType:N"),
@@ -286,6 +251,11 @@ class AccuracyPlot:
             y_domain = [0, max_point]
             # y_domain = [0, accuracy_df[self.units_of_measure].max()+1]
         
+        _dir = "../results/dataframe/accuracy_scatter_df"
+        if not os.path.exists(_dir):
+            os.makedirs(_dir)
+        accuracy_df.to_csv(f'{_dir}/{self.test_name}.csv')
+        
         scatter_plot = alt.Chart(accuracy_df, title=self.test_name).mark_circle(size=8,).encode(
             y=alt.Y(f"{self.units_of_measure}:Q", title=ytitle, scale=alt.Scale(domain=y_domain)),
             x=alt.X("agentType:N", scale=alt.Scale(domain=model_order), title=None),
@@ -294,19 +264,6 @@ class AccuracyPlot:
         ).transform_calculate(
             jitter="sqrt(-2*log(random()))*cos(2*PI*random())" 
         )
-
-        # else:
-        #     ci_df = model_ci_df
-        #     # scatter_plot = None
-        #     accuracy_df = self.create_accuracy_df(self.model_responses, metric=self.units_of_measure)
-        #     scatter_plot = alt.Chart(accuracy_df, title=self.test_name).mark_circle(size=8, opacity=0.7).encode(
-        #         y=alt.Y(f"{self.units_of_measure}:Q", title=ytitle),
-        #         x=alt.X("agentType:N", scale=alt.Scale(domain=model_order), title=None),
-        #         xOffset="jitter:Q",
-        #         color=alt.Color('agentType:N', scale=alt.Scale(domain=model_order, range=bg_color_order)).legend(None),
-        #         ).transform_calculate(
-        #             jitter="sqrt(-2*log(random()))*cos(2*PI*random())" 
-        #     )
 
         final_plot = scatter_plot
         
@@ -318,9 +275,9 @@ class AccuracyPlot:
 
 def create_single_model_comparison_plots(prompt_type="indist_instructions_question", temperature_dir='t1', top_p_dir='p04'):
     test_types = [
-        # "ggr",
+        "ggr",
         "vlat", 
-        # "holf",
+        "holf",
     ]
     model_sets = [
         ('llava-hf/llava-1.5-7b-hf', '#f58518', '#f9b574'),
@@ -349,12 +306,15 @@ def create_single_model_comparison_plots(prompt_type="indist_instructions_questi
             render_ci=True,
             statistic=np.median if test_type in ["holf", "holf2"] else np.mean
         ).properties(title=f"{test_type}", height=300, width=125)
-        _dir = f'./single_accuracy_plots/{prompt_type}/{test_type}/{top_p_dir}/{temperature_dir}'
+        # _dir = f'./single_accuracy_plots/{prompt_type}/{test_type}/{top_p_dir}/{temperature_dir}'
+        _dir = f'../results/figures/accuracy_plots'
         if not os.path.exists(_dir):
             os.makedirs(_dir)
 
-        file_name = f"{_dir}/accuracy_plot_med_p00-3.pdf"
-        # plot.save(file_name)
+        # file_name = f"{_dir}/accuracy_plot_med_p00-3.pdf"
+        file_name = f"{_dir}/accuracy_plot_{prompt_type}-{test_type}-{top_p_dir}-{temperature_dir}.pdf"
+
+        plot.save(file_name)
         # test_plots.append(plot)
 
         print(f"Saving plot to {file_name}")
@@ -364,215 +324,6 @@ def create_single_model_comparison_plots(prompt_type="indist_instructions_questi
     #     labels=False
     # )
 
-
-def create_model_comparison_plots(prompt_type):
-    """
-    Creates plot with all models across all temperatures and p values
-    """
-    
-    # temperature_dirs =['t10', 't02', 't04' , 't06', 't08']
-    temperature_dirs =['t10']
-    top_p_dirs = ['p04']
-    # top_p_dirs = ['p02', 'p04' , 'p06', 'p08']
-
-    test_types = [
-        "ggr",
-        # "vlat", 
-        # "holf",
-        # 'calvi-trick',
-        # 'calvi-standard',
-        # 'holf2',
-        # 'chartqa-test-continuous',
-        # 'chartqa-test-categorical'
-    ]
-    metric = 'a_in_b'
-
-    model_sets = [
-        [('llava-hf/llava-1.5-7b-hf', '#f9b574', '#f9b574')],
-        # ('llava-hf/llava-1.5-13b-hf', '#f58518', '#f58518')],
-        [('Salesforce/blip2-flan-t5-xl', '#5ba3cf', '#5ba3cf'),
-        ('Salesforce/blip2-flan-t5-xxl', '#4c78a8', '#4c78a8')],
-        # [("google/pix2struct-chartqa-base", '#b9a7d0', '#b9a7d0'),
-        # ("google/matcha-chartqa", '#8b6db2', '#8b6db2')],
-        # [('liuhaotian/llava-v1.6-34b', '#F1C232', '#BF9000')],
-        [('GPT-4V', '#b85536', '#b85536')],
-        [('Human/Math-2-1', "#639460", "#C8EBC6")],
-        [('Human/Math-3', "#2e693b", "#73D287")],
-        # [('Human', '#b85536', '#b85536')],
-    ]
-
-    final_plot_set = []
-    for model_set in model_sets:
-        v_plots = []
-        for test_type in test_types:
-            plots = []
-            for temperature_dir in temperature_dirs:
-                top_p_dir = 'p1'
-                dir = f'./accuracy_plots/{prompt_type}/{test_type}/{top_p_dir}/{temperature_dir}'
-                if not os.path.exists(dir):
-                        os.makedirs(dir)
-                try:
-                    calvi_acc = AccuracyPlot(test_type, prompt_type, 
-                                            top_p_dir=top_p_dir, 
-                                            temperature_dir=temperature_dir,
-                                            model_config=model_set,
-                                            units_of_measure=metric)
-                    
-                    plot = calvi_acc.create_error_plot(
-                        hide_y_title=True
-                    ).properties(title=f"{top_p_dir}_{temperature_dir}", #f"{test_type}_",
-                                height=100)
-
-                    plots.append(plot)
-                    print(f"Saving plot to {dir}/accuracy_plot.pdf")
-                    plot.save(f"{dir}/accuracy_plot.pdf")
-                except Exception as e:
-                    print(f"Error: {e}")
-
-            for top_p_dir in top_p_dirs:
-                temperature_dir = 't1'
-                dir = f'./accuracy_plots/{prompt_type}/{test_type}/{top_p_dir}/{temperature_dir}'
-                if not os.path.exists(dir):
-                        os.makedirs(dir)
-                try:
-                    calvi_acc = AccuracyPlot(test_type, 
-                                            prompt_type, 
-                                            top_p_dir=top_p_dir, 
-                                            temperature_dir=temperature_dir,
-                                            model_config=model_set,
-                                            units_of_measure=metric)
-
-                    plot = calvi_acc.create_error_plot(
-                        hide_y_title=True
-                    ).properties(title=f"{top_p_dir}_{temperature_dir}", #f"{test_type}_{top_p_dir}_{temperature_dir}", 
-                                height=100)
-
-                    plots.append(plot)
-                    print(f"Saving plot to {dir}/accuracy_plot.pdf")
-                    plot.save(f"{dir}/accuracy_plot.pdf")
-                except Exception as e:
-                    print(f"Error: {e}")
-            
-            h_plots = alt.hconcat(*plots, spacing=0).resolve_scale(
-                y='shared'
-            ).properties(title=f"{test_type}")
-            
-            v_plots.append(h_plots)
-            h_plots.save(f"./accuracy_plots/{prompt_type}/{test_type}/accuracy_plot.pdf")
-
-        v_plots = alt.vconcat(*v_plots).resolve_scale(
-            x='shared'
-        ).configure_axis(
-            labels=False
-        )
-
-        v_plots.save(f"./accuracy_plots/{prompt_type}/{model_config[0][0].split("/")[-1]}_accuracy_plot.pdf")
-        final_plot_set.append(v_plots)
-    
-    final_plot = alt.hconcat(*final_plot_set).resolve_scale(
-        y='shared'
-    ).configure_axis(
-        labels=False
-    )
-    final_plot.save(f"./accuracy_plots/{prompt_type}/relaxed_accuracy_pt_plot.pdf")
-
-
-def create_log_error_plot(temperature_dir, top_p_dir, prompt_type, units_of_measure='absolute_error',):
-    test_types = [
-        "holf",
-        'holf2',
-        'chartqa-test-continuous',
-    ]
-    model_config = [
-        ('llava-hf/llava-1.5-7b-hf', '#f9b574', '#f9b574'),
-        ('llava-hf/llava-1.5-13b-hf', '#f58518', '#f58518'),
-        ('Salesforce/blip2-flan-t5-xl', '#5ba3cf', '#5ba3cf'),
-        ('Salesforce/blip2-flan-t5-xxl', '#4c78a8', '#4c78a8'),
-        ('GPT-4V', '#b85536', '#b85536'),
-        ('liuhaotian/llava-v1.6-34b', '#F1C232', '#BF9000'),
-        ("google/pix2struct-chartqa-base", '#b9a7d0', '#b9a7d0'),
-        ("google/matcha-chartqa", '#8b6db2', '#8b6db2'),
-    ]
-
-    charts = []
-    for test_type in test_types:
-        try:
-            accuracy_plot = AccuracyPlot(test_type, prompt_type, units_of_measure, top_p_dir, temperature_dir, model_config)
-            plot = accuracy_plot.create_error_scatter_plot()
-            charts.append(plot)
-        except Exception as e:
-            print(f"Error: {e}")
-
-    h_charts = alt.hconcat(*charts).properties(title=f"{prompt_type} + {top_p_dir} + {temperature_dir}")
-
-    dir = f'./accuracy_plots/{units_of_measure}/{prompt_type}'
-    if not os.path.exists(dir):
-        os.makedirs(dir)
-
-    print(f"Saving plot to {dir}/log_error_plot.pdf")
-    h_charts.save(f"{dir}/log_error_plot.pdf")
-
-
-def create_axis_minmax_error_plot(temperature_dir, top_p_dir, prompt_type, units_of_measure='minmax_axis_normalized_error',):
-    test_types = [
-        "holf",
-        'holf2',
-    ]
-
-    model_config = [
-        ('llava-hf/llava-1.5-7b-hf', '#f9b574', '#f9b574'),
-        ('llava-hf/llava-1.5-13b-hf', '#f58518', '#f58518'),
-        ('Salesforce/blip2-flan-t5-xl', '#5ba3cf', '#5ba3cf'),
-        ('Salesforce/blip2-flan-t5-xxl', '#4c78a8', '#4c78a8'),
-        ('GPT-4V', '#b85536', '#b85536'),
-        ('liuhaotian/llava-v1.6-34b', '#F1C232', '#BF9000'),
-        ("google/pix2struct-chartqa-base", '#b9a7d0', '#b9a7d0'),
-        ("google/matcha-chartqa", '#8b6db2', '#8b6db2'),
-    ]
-
-    charts = []
-    for test_type in test_types:
-        try:
-            accuracy_plot = AccuracyPlot(test_type, prompt_type, units_of_measure, top_p_dir, temperature_dir, model_config)
-            plot = accuracy_plot.create_error_scatter_plot()
-            charts.append(plot)
-        except Exception as e:
-            print(f"Error: {e}")
-
-    h_charts = alt.hconcat(*charts).properties(title=f"{prompt_type} + {top_p_dir} + {temperature_dir} ")
-
-    dir = f'./accuracy_plots/{units_of_measure}/{prompt_type}'
-    if not os.path.exists(dir):
-        os.makedirs(dir)
-
-    print(f"Saving plot to {dir}/error_plot.pdf")
-    h_charts.save(f"{dir}/error_plot.pdf")
-    
 if __name__ == "__main__":
-    # prompt_type = 'indist_instructions_question'
-    prompt_type = 'indist_instructions_cot_0shot_question'
-    metric = 'relaxed_accuracy'
-   
-    test_types = [
-        "ggr",
-        "vlat", 
-        "holf",
-        # "Human/Math-2-1",
-        # "Human/Math-3",
-        # "Human"
-        # 'calvi-trick',
-        # 'calvi-standard',
-        # 'holf2',
-        # 'chartqa-test-continuous',
-        # 'chartqa-test-categorical'
-    ]
-    temperature_dirs =['t10', 't02', 't04' , 't06', 't08']
-    top_p_dirs = ['p02', 'p04' , 'p06', 'p08']
-    top_p = 'p1'
-    top_t = 't10'
 
     create_single_model_comparison_plots()
-    # create_model_comparison_plots("indist_instructions_cot_0shot_question")
-    # create_log_error_plot(top_t, top_p, prompt_type, units_of_measure='absolute_error')
-    # create_axis_minmax_error_plot(top_t, top_p, prompt_type, units_of_measure='minmax_axis_normalized_error')
-    

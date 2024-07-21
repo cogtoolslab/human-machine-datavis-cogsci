@@ -1,0 +1,368 @@
+,question,image_file,agentType,a_in_b
+0,A group of males are gathered around the height of 176 cm and the weight of 70 kg.,item30.png,GPT-4V,1.0
+1,A group of males are gathered around the height of 176 cm and the weight of 70 kg.,item30.png,Human/Math-2-1,0.8590308370044053
+2,A group of males are gathered around the height of 176 cm and the weight of 70 kg.,item30.png,Human/Math-3,0.8465189873417721
+3,A group of males are gathered around the height of 176 cm and the weight of 70 kg.,item30.png,Salesforce/blip2-flan-t5-xl,1.0
+4,A group of males are gathered around the height of 176 cm and the weight of 70 kg.,item30.png,Salesforce/blip2-flan-t5-xxl,1.0
+5,A group of males are gathered around the height of 176 cm and the weight of 70 kg.,item30.png,Salesforce/blip2-opt-2.7b,1.0
+6,A group of males are gathered around the height of 176 cm and the weight of 70 kg.,item30.png,llava-hf/llava-1.5-7b-hf,1.0
+7,A group of the metro systems of the world has approximately 300 stations and around a 200km system length.,item51.png,GPT-4V,0.0
+8,A group of the metro systems of the world has approximately 300 stations and around a 200km system length.,item51.png,Human/Math-2-1,0.7665198237885462
+9,A group of the metro systems of the world has approximately 300 stations and around a 200km system length.,item51.png,Human/Math-3,0.7705696202531646
+10,A group of the metro systems of the world has approximately 300 stations and around a 200km system length.,item51.png,Salesforce/blip2-flan-t5-xl,0.0
+11,A group of the metro systems of the world has approximately 300 stations and around a 200km system length.,item51.png,Salesforce/blip2-flan-t5-xxl,1.0
+12,A group of the metro systems of the world has approximately 300 stations and around a 200km system length.,item51.png,Salesforce/blip2-opt-2.7b,0.0
+13,A group of the metro systems of the world has approximately 300 stations and around a 200km system length.,item51.png,llava-hf/llava-1.5-7b-hf,0.0
+14,About how much did the price of a barrel of oil fall from April to September in 2015?,item5.png,GPT-4V,1.0
+15,About how much did the price of a barrel of oil fall from April to September in 2015?,item5.png,Human/Math-2-1,0.6828193832599119
+16,About how much did the price of a barrel of oil fall from April to September in 2015?,item5.png,Human/Math-3,0.7515822784810127
+17,About how much did the price of a barrel of oil fall from April to September in 2015?,item5.png,Salesforce/blip2-flan-t5-xl,0.0
+18,About how much did the price of a barrel of oil fall from April to September in 2015?,item5.png,Salesforce/blip2-flan-t5-xxl,0.0
+19,About how much did the price of a barrel of oil fall from April to September in 2015?,item5.png,Salesforce/blip2-opt-2.7b,0.4
+20,About how much did the price of a barrel of oil fall from April to September in 2015?,item5.png,llava-hf/llava-1.5-7b-hf,1.0
+21,About what is the global smartphone market share of Samsung?,item19.png,GPT-4V,1.0
+22,About what is the global smartphone market share of Samsung?,item19.png,Human/Math-2-1,0.6828193832599119
+23,About what is the global smartphone market share of Samsung?,item19.png,Human/Math-3,0.754746835443038
+24,About what is the global smartphone market share of Samsung?,item19.png,Salesforce/blip2-flan-t5-xl,1.0
+25,About what is the global smartphone market share of Samsung?,item19.png,Salesforce/blip2-flan-t5-xxl,0.0
+26,About what is the global smartphone market share of Samsung?,item19.png,Salesforce/blip2-opt-2.7b,0.4444444444444444
+27,About what is the global smartphone market share of Samsung?,item19.png,llava-hf/llava-1.5-7b-hf,0.0
+28,About what is the ratio of the cost of a sandwich to the total cost of room service in Seattle?,item11.png,GPT-4V,0.0
+29,About what is the ratio of the cost of a sandwich to the total cost of room service in Seattle?,item11.png,Human/Math-2-1,0.46255506607929514
+30,About what is the ratio of the cost of a sandwich to the total cost of room service in Seattle?,item11.png,Human/Math-3,0.5617088607594937
+31,About what is the ratio of the cost of a sandwich to the total cost of room service in Seattle?,item11.png,Salesforce/blip2-flan-t5-xl,0.0
+32,About what is the ratio of the cost of a sandwich to the total cost of room service in Seattle?,item11.png,Salesforce/blip2-flan-t5-xxl,0.0
+33,About what is the ratio of the cost of a sandwich to the total cost of room service in Seattle?,item11.png,Salesforce/blip2-opt-2.7b,0.5
+34,About what is the ratio of the cost of a sandwich to the total cost of room service in Seattle?,item11.png,llava-hf/llava-1.5-7b-hf,0.3
+35,About what was the ratio of the number of girls named 'Olivia' to those named 'Isla' in 2014 in the UK?,item41.png,GPT-4V,1.0
+36,About what was the ratio of the number of girls named 'Olivia' to those named 'Isla' in 2014 in the UK?,item41.png,Human/Math-2-1,0.3392070484581498
+37,About what was the ratio of the number of girls named 'Olivia' to those named 'Isla' in 2014 in the UK?,item41.png,Human/Math-3,0.379746835443038
+38,About what was the ratio of the number of girls named 'Olivia' to those named 'Isla' in 2014 in the UK?,item41.png,Salesforce/blip2-flan-t5-xl,1.0
+39,About what was the ratio of the number of girls named 'Olivia' to those named 'Isla' in 2014 in the UK?,item41.png,Salesforce/blip2-flan-t5-xxl,1.0
+40,About what was the ratio of the number of girls named 'Olivia' to those named 'Isla' in 2014 in the UK?,item41.png,Salesforce/blip2-opt-2.7b,0.4
+41,About what was the ratio of the number of girls named 'Olivia' to those named 'Isla' in 2014 in the UK?,item41.png,llava-hf/llava-1.5-7b-hf,0.0
+42,For which website was the number of unique visitors the largest in 2010?,item59.png,GPT-4V,0.0
+43,For which website was the number of unique visitors the largest in 2010?,item59.png,Human/Math-2-1,0.8964757709251101
+44,For which website was the number of unique visitors the largest in 2010?,item59.png,Human/Math-3,0.8987341772151899
+45,For which website was the number of unique visitors the largest in 2010?,item59.png,Salesforce/blip2-flan-t5-xl,0.0
+46,For which website was the number of unique visitors the largest in 2010?,item59.png,Salesforce/blip2-flan-t5-xxl,0.0
+47,For which website was the number of unique visitors the largest in 2010?,item59.png,Salesforce/blip2-opt-2.7b,1.0
+48,For which website was the number of unique visitors the largest in 2010?,item59.png,llava-hf/llava-1.5-7b-hf,0.7
+49,How many countries in Asia is the average internet speed slower than Thailand?,item9.png,GPT-4V,0.4
+50,How many countries in Asia is the average internet speed slower than Thailand?,item9.png,Human/Math-2-1,0.43612334801762115
+51,How many countries in Asia is the average internet speed slower than Thailand?,item9.png,Human/Math-3,0.3686708860759494
+52,How many countries in Asia is the average internet speed slower than Thailand?,item9.png,Salesforce/blip2-flan-t5-xl,0.0
+53,How many countries in Asia is the average internet speed slower than Thailand?,item9.png,Salesforce/blip2-flan-t5-xxl,0.0
+54,How many countries in Asia is the average internet speed slower than Thailand?,item9.png,Salesforce/blip2-opt-2.7b,0.1111111111111111
+55,How many countries in Asia is the average internet speed slower than Thailand?,item9.png,llava-hf/llava-1.5-7b-hf,0.0
+56,How many people have rated the taxi between 4.0 and 4.2?,item22.png,GPT-4V,0.0
+57,How many people have rated the taxi between 4.0 and 4.2?,item22.png,Human/Math-2-1,0.9515418502202643
+58,How many people have rated the taxi between 4.0 and 4.2?,item22.png,Human/Math-3,0.9430379746835443
+59,How many people have rated the taxi between 4.0 and 4.2?,item22.png,Salesforce/blip2-flan-t5-xl,0.0
+60,How many people have rated the taxi between 4.0 and 4.2?,item22.png,Salesforce/blip2-flan-t5-xxl,0.7
+61,How many people have rated the taxi between 4.0 and 4.2?,item22.png,Salesforce/blip2-opt-2.7b,0.0
+62,How many people have rated the taxi between 4.0 and 4.2?,item22.png,llava-hf/llava-1.5-7b-hf,0.0
+63,"In 2015, the unemployment rate for Washington (WA) was higher than that of Wisconsin (WI).",item57.png,GPT-4V,0.0
+64,"In 2015, the unemployment rate for Washington (WA) was higher than that of Wisconsin (WI).",item57.png,Human/Math-2-1,0.8832599118942731
+65,"In 2015, the unemployment rate for Washington (WA) was higher than that of Wisconsin (WI).",item57.png,Human/Math-3,0.8813291139240507
+66,"In 2015, the unemployment rate for Washington (WA) was higher than that of Wisconsin (WI).",item57.png,Salesforce/blip2-flan-t5-xl,1.0
+67,"In 2015, the unemployment rate for Washington (WA) was higher than that of Wisconsin (WI).",item57.png,Salesforce/blip2-flan-t5-xxl,0.0
+68,"In 2015, the unemployment rate for Washington (WA) was higher than that of Wisconsin (WI).",item57.png,Salesforce/blip2-opt-2.7b,0.4
+69,"In 2015, the unemployment rate for Washington (WA) was higher than that of Wisconsin (WI).",item57.png,llava-hf/llava-1.5-7b-hf,1.0
+70,"In general, the ridership of the metro system increases as the number of stations increases.",item52.png,GPT-4V,0.0
+71,"In general, the ridership of the metro system increases as the number of stations increases.",item52.png,Human/Math-2-1,0.44052863436123346
+72,"In general, the ridership of the metro system increases as the number of stations increases.",item52.png,Human/Math-3,0.4699367088607595
+73,"In general, the ridership of the metro system increases as the number of stations increases.",item52.png,Salesforce/blip2-flan-t5-xl,0.0
+74,"In general, the ridership of the metro system increases as the number of stations increases.",item52.png,Salesforce/blip2-flan-t5-xxl,0.0
+75,"In general, the ridership of the metro system increases as the number of stations increases.",item52.png,Salesforce/blip2-opt-2.7b,0.0
+76,"In general, the ridership of the metro system increases as the number of stations increases.",item52.png,llava-hf/llava-1.5-7b-hf,0.0
+77,"In the UK, the number of girls named 'Amelia' in 2014 was more than it was in 2013.",item44.png,GPT-4V,0.0
+78,"In the UK, the number of girls named 'Amelia' in 2014 was more than it was in 2013.",item44.png,Human/Math-2-1,0.28193832599118945
+79,"In the UK, the number of girls named 'Amelia' in 2014 was more than it was in 2013.",item44.png,Human/Math-3,0.2958860759493671
+80,"In the UK, the number of girls named 'Amelia' in 2014 was more than it was in 2013.",item44.png,Salesforce/blip2-flan-t5-xl,0.0
+81,"In the UK, the number of girls named 'Amelia' in 2014 was more than it was in 2013.",item44.png,Salesforce/blip2-flan-t5-xxl,0.0
+82,"In the UK, the number of girls named 'Amelia' in 2014 was more than it was in 2013.",item44.png,Salesforce/blip2-opt-2.7b,0.0
+83,"In the UK, the number of girls named 'Amelia' in 2014 was more than it was in 2013.",item44.png,llava-hf/llava-1.5-7b-hf,0.0
+84,In which city is the cost of soda the highest?,item12.png,GPT-4V,0.0
+85,In which city is the cost of soda the highest?,item12.png,Human/Math-2-1,0.6696035242290749
+86,In which city is the cost of soda the highest?,item12.png,Human/Math-3,0.694620253164557
+87,In which city is the cost of soda the highest?,item12.png,Salesforce/blip2-flan-t5-xl,0.0
+88,In which city is the cost of soda the highest?,item12.png,Salesforce/blip2-flan-t5-xxl,0.0
+89,In which city is the cost of soda the highest?,item12.png,Salesforce/blip2-opt-2.7b,0.0
+90,In which city is the cost of soda the highest?,item12.png,llava-hf/llava-1.5-7b-hf,1.0
+91,In which company is the global smartphone market share the smallest?,item20.png,GPT-4V,1.0
+92,In which company is the global smartphone market share the smallest?,item20.png,Human/Math-2-1,0.9647577092511013
+93,In which company is the global smartphone market share the smallest?,item20.png,Human/Math-3,0.9588607594936709
+94,In which company is the global smartphone market share the smallest?,item20.png,Salesforce/blip2-flan-t5-xl,0.0
+95,In which company is the global smartphone market share the smallest?,item20.png,Salesforce/blip2-flan-t5-xxl,0.0
+96,In which company is the global smartphone market share the smallest?,item20.png,Salesforce/blip2-opt-2.7b,0.0
+97,In which company is the global smartphone market share the smallest?,item20.png,llava-hf/llava-1.5-7b-hf,0.0
+98,In which country is the average internet speed the fastest in Asia?,item7.png,GPT-4V,1.0
+99,In which country is the average internet speed the fastest in Asia?,item7.png,Human/Math-2-1,0.9537444933920705
+100,In which country is the average internet speed the fastest in Asia?,item7.png,Human/Math-3,0.9620253164556962
+101,In which country is the average internet speed the fastest in Asia?,item7.png,Salesforce/blip2-flan-t5-xl,1.0
+102,In which country is the average internet speed the fastest in Asia?,item7.png,Salesforce/blip2-flan-t5-xxl,0.0
+103,In which country is the average internet speed the fastest in Asia?,item7.png,Salesforce/blip2-opt-2.7b,0.0
+104,In which country is the average internet speed the fastest in Asia?,item7.png,llava-hf/llava-1.5-7b-hf,0.6
+105,In which month was the price of a barrel of oil the lowest in 2015?,item2.png,GPT-4V,1.0
+106,In which month was the price of a barrel of oil the lowest in 2015?,item2.png,Human/Math-2-1,0.9537444933920705
+107,In which month was the price of a barrel of oil the lowest in 2015?,item2.png,Human/Math-3,0.9556962025316456
+108,In which month was the price of a barrel of oil the lowest in 2015?,item2.png,Salesforce/blip2-flan-t5-xl,0.0
+109,In which month was the price of a barrel of oil the lowest in 2015?,item2.png,Salesforce/blip2-flan-t5-xxl,0.4
+110,In which month was the price of a barrel of oil the lowest in 2015?,item2.png,Salesforce/blip2-opt-2.7b,0.5
+111,In which month was the price of a barrel of oil the lowest in 2015?,item2.png,llava-hf/llava-1.5-7b-hf,1.0
+112,In which state was the unemployment rate the highest in 2015?,item56.png,GPT-4V,0.0
+113,In which state was the unemployment rate the highest in 2015?,item56.png,Human/Math-2-1,0.4933920704845815
+114,In which state was the unemployment rate the highest in 2015?,item56.png,Human/Math-3,0.5237341772151899
+115,In which state was the unemployment rate the highest in 2015?,item56.png,Salesforce/blip2-flan-t5-xl,0.0
+116,In which state was the unemployment rate the highest in 2015?,item56.png,Salesforce/blip2-flan-t5-xxl,0.0
+117,In which state was the unemployment rate the highest in 2015?,item56.png,Salesforce/blip2-opt-2.7b,1.0
+118,In which state was the unemployment rate the highest in 2015?,item56.png,llava-hf/llava-1.5-7b-hf,1.0
+119,More people have rated the taxi between 4.6 and 4.8 than between 4.2 and 4.4.,item25.png,GPT-4V,1.0
+120,More people have rated the taxi between 4.6 and 4.8 than between 4.2 and 4.4.,item25.png,Human/Math-2-1,0.920704845814978
+121,More people have rated the taxi between 4.6 and 4.8 than between 4.2 and 4.4.,item25.png,Human/Math-3,0.935126582278481
+122,More people have rated the taxi between 4.6 and 4.8 than between 4.2 and 4.4.,item25.png,Salesforce/blip2-flan-t5-xl,1.0
+123,More people have rated the taxi between 4.6 and 4.8 than between 4.2 and 4.4.,item25.png,Salesforce/blip2-flan-t5-xxl,1.0
+124,More people have rated the taxi between 4.6 and 4.8 than between 4.2 and 4.4.,item25.png,Salesforce/blip2-opt-2.7b,0.0
+125,More people have rated the taxi between 4.6 and 4.8 than between 4.2 and 4.4.,item25.png,llava-hf/llava-1.5-7b-hf,1.0
+126,"Over the course of 2013, the average price of a pound of coffee beans was ____________.",item38.png,GPT-4V,1.0
+127,"Over the course of 2013, the average price of a pound of coffee beans was ____________.",item38.png,Human/Math-2-1,0.9361233480176211
+128,"Over the course of 2013, the average price of a pound of coffee beans was ____________.",item38.png,Human/Math-3,0.944620253164557
+129,"Over the course of 2013, the average price of a pound of coffee beans was ____________.",item38.png,Salesforce/blip2-flan-t5-xl,0.0
+130,"Over the course of 2013, the average price of a pound of coffee beans was ____________.",item38.png,Salesforce/blip2-flan-t5-xxl,0.0
+131,"Over the course of 2013, the average price of a pound of coffee beans was ____________.",item38.png,Salesforce/blip2-opt-2.7b,0.0
+132,"Over the course of 2013, the average price of a pound of coffee beans was ____________.",item38.png,llava-hf/llava-1.5-7b-hf,0.0
+133,"Over the course of the second half of 2015, the price of a barrel of oil was ____________.",item4.png,GPT-4V,1.0
+134,"Over the course of the second half of 2015, the price of a barrel of oil was ____________.",item4.png,Human/Math-2-1,0.9691629955947136
+135,"Over the course of the second half of 2015, the price of a barrel of oil was ____________.",item4.png,Human/Math-3,0.9556962025316456
+136,"Over the course of the second half of 2015, the price of a barrel of oil was ____________.",item4.png,Salesforce/blip2-flan-t5-xl,0.0
+137,"Over the course of the second half of 2015, the price of a barrel of oil was ____________.",item4.png,Salesforce/blip2-flan-t5-xxl,1.0
+138,"Over the course of the second half of 2015, the price of a barrel of oil was ____________.",item4.png,Salesforce/blip2-opt-2.7b,0.0
+139,"Over the course of the second half of 2015, the price of a barrel of oil was ____________.",item4.png,llava-hf/llava-1.5-7b-hf,1.0
+140,"Over the course of years between 2009 and 2014, the number of girls named 'Isla' was always more than 'Olivia'.",item45.png,GPT-4V,1.0
+141,"Over the course of years between 2009 and 2014, the number of girls named 'Isla' was always more than 'Olivia'.",item45.png,Human/Math-2-1,0.4052863436123348
+142,"Over the course of years between 2009 and 2014, the number of girls named 'Isla' was always more than 'Olivia'.",item45.png,Human/Math-3,0.3829113924050633
+143,"Over the course of years between 2009 and 2014, the number of girls named 'Isla' was always more than 'Olivia'.",item45.png,Salesforce/blip2-flan-t5-xl,0.0
+144,"Over the course of years between 2009 and 2014, the number of girls named 'Isla' was always more than 'Olivia'.",item45.png,Salesforce/blip2-flan-t5-xxl,0.1111111111111111
+145,"Over the course of years between 2009 and 2014, the number of girls named 'Isla' was always more than 'Olivia'.",item45.png,Salesforce/blip2-opt-2.7b,0.0
+146,"Over the course of years between 2009 and 2014, the number of girls named 'Isla' was always more than 'Olivia'.",item45.png,llava-hf/llava-1.5-7b-hf,0.1
+147,"Over the course of years between 2009 and 2014, when was the number of girls named 'Amelia' at the maximum?",item42.png,GPT-4V,1.0
+148,"Over the course of years between 2009 and 2014, when was the number of girls named 'Amelia' at the maximum?",item42.png,Human/Math-2-1,0.9162995594713657
+149,"Over the course of years between 2009 and 2014, when was the number of girls named 'Amelia' at the maximum?",item42.png,Human/Math-3,0.9034810126582279
+150,"Over the course of years between 2009 and 2014, when was the number of girls named 'Amelia' at the maximum?",item42.png,Salesforce/blip2-flan-t5-xl,0.6
+151,"Over the course of years between 2009 and 2014, when was the number of girls named 'Amelia' at the maximum?",item42.png,Salesforce/blip2-flan-t5-xxl,0.0
+152,"Over the course of years between 2009 and 2014, when was the number of girls named 'Amelia' at the maximum?",item42.png,Salesforce/blip2-opt-2.7b,0.0
+153,"Over the course of years between 2009 and 2014, when was the number of girls named 'Amelia' at the maximum?",item42.png,llava-hf/llava-1.5-7b-hf,0.0
+154,Samsung is nested in the Financial category.,item61.png,GPT-4V,1.0
+155,Samsung is nested in the Financial category.,item61.png,Human/Math-2-1,0.8898678414096917
+156,Samsung is nested in the Financial category.,item61.png,Human/Math-3,0.8860759493670886
+157,Samsung is nested in the Financial category.,item61.png,Salesforce/blip2-flan-t5-xl,1.0
+158,Samsung is nested in the Financial category.,item61.png,Salesforce/blip2-flan-t5-xxl,1.0
+159,Samsung is nested in the Financial category.,item61.png,Salesforce/blip2-opt-2.7b,1.0
+160,Samsung is nested in the Financial category.,item61.png,llava-hf/llava-1.5-7b-hf,0.9
+161,The approval rating of Republicans for the people who have the education level of Some College Degree is lower than that for the people who have the education level of Postgraduate Study.,item18.png,GPT-4V,0.6
+162,The approval rating of Republicans for the people who have the education level of Some College Degree is lower than that for the people who have the education level of Postgraduate Study.,item18.png,Human/Math-2-1,0.6563876651982379
+163,The approval rating of Republicans for the people who have the education level of Some College Degree is lower than that for the people who have the education level of Postgraduate Study.,item18.png,Human/Math-3,0.7041139240506329
+164,The approval rating of Republicans for the people who have the education level of Some College Degree is lower than that for the people who have the education level of Postgraduate Study.,item18.png,Salesforce/blip2-flan-t5-xl,0.0
+165,The approval rating of Republicans for the people who have the education level of Some College Degree is lower than that for the people who have the education level of Postgraduate Study.,item18.png,Salesforce/blip2-flan-t5-xxl,0.0
+166,The approval rating of Republicans for the people who have the education level of Some College Degree is lower than that for the people who have the education level of Postgraduate Study.,item18.png,Salesforce/blip2-opt-2.7b,1.0
+167,The approval rating of Republicans for the people who have the education level of Some College Degree is lower than that for the people who have the education level of Postgraduate Study.,item18.png,llava-hf/llava-1.5-7b-hf,0.0
+168,The cost of vodka in Atlanta is higher than that of Honolulu.,item14.png,GPT-4V,0.0
+169,The cost of vodka in Atlanta is higher than that of Honolulu.,item14.png,Human/Math-2-1,0.5352422907488987
+170,The cost of vodka in Atlanta is higher than that of Honolulu.,item14.png,Human/Math-3,0.5348101265822784
+171,The cost of vodka in Atlanta is higher than that of Honolulu.,item14.png,Salesforce/blip2-flan-t5-xl,0.0
+172,The cost of vodka in Atlanta is higher than that of Honolulu.,item14.png,Salesforce/blip2-flan-t5-xxl,0.0
+173,The cost of vodka in Atlanta is higher than that of Honolulu.,item14.png,Salesforce/blip2-opt-2.7b,0.8
+174,The cost of vodka in Atlanta is higher than that of Honolulu.,item14.png,llava-hf/llava-1.5-7b-hf,1.0
+175,The global smartphone market share of Apple is larger than that of Huawei.,item21.png,GPT-4V,1.0
+176,The global smartphone market share of Apple is larger than that of Huawei.,item21.png,Human/Math-2-1,0.9537444933920705
+177,The global smartphone market share of Apple is larger than that of Huawei.,item21.png,Human/Math-3,0.9477848101265823
+178,The global smartphone market share of Apple is larger than that of Huawei.,item21.png,Salesforce/blip2-flan-t5-xl,1.0
+179,The global smartphone market share of Apple is larger than that of Huawei.,item21.png,Salesforce/blip2-flan-t5-xxl,1.0
+180,The global smartphone market share of Apple is larger than that of Huawei.,item21.png,Salesforce/blip2-opt-2.7b,1.0
+181,The global smartphone market share of Apple is larger than that of Huawei.,item21.png,llava-hf/llava-1.5-7b-hf,1.0
+182,The metro system in Shanghai has more ridership than the metro system in Beijing.,item53.png,GPT-4V,1.0
+183,The metro system in Shanghai has more ridership than the metro system in Beijing.,item53.png,Human/Math-2-1,0.6894273127753304
+184,The metro system in Shanghai has more ridership than the metro system in Beijing.,item53.png,Human/Math-3,0.7389240506329114
+185,The metro system in Shanghai has more ridership than the metro system in Beijing.,item53.png,Salesforce/blip2-flan-t5-xl,0.0
+186,The metro system in Shanghai has more ridership than the metro system in Beijing.,item53.png,Salesforce/blip2-flan-t5-xxl,1.0
+187,The metro system in Shanghai has more ridership than the metro system in Beijing.,item53.png,Salesforce/blip2-opt-2.7b,0.0
+188,The metro system in Shanghai has more ridership than the metro system in Beijing.,item53.png,llava-hf/llava-1.5-7b-hf,0.0
+189,The number of girls named 'Isla' was __________ from 2009 to 2012.,item43.png,GPT-4V,1.0
+190,The number of girls named 'Isla' was __________ from 2009 to 2012.,item43.png,Human/Math-2-1,0.9449339207048458
+191,The number of girls named 'Isla' was __________ from 2009 to 2012.,item43.png,Human/Math-3,0.9256329113924051
+192,The number of girls named 'Isla' was __________ from 2009 to 2012.,item43.png,Salesforce/blip2-flan-t5-xl,1.0
+193,The number of girls named 'Isla' was __________ from 2009 to 2012.,item43.png,Salesforce/blip2-flan-t5-xxl,0.0
+194,The number of girls named 'Isla' was __________ from 2009 to 2012.,item43.png,Salesforce/blip2-opt-2.7b,1.0
+195,The number of girls named 'Isla' was __________ from 2009 to 2012.,item43.png,llava-hf/llava-1.5-7b-hf,1.0
+196,The number of unique visitors for Amazon was more than that of Yahoo in 2010.,item60.png,GPT-4V,1.0
+197,The number of unique visitors for Amazon was more than that of Yahoo in 2010.,item60.png,Human/Math-2-1,0.8722466960352423
+198,The number of unique visitors for Amazon was more than that of Yahoo in 2010.,item60.png,Human/Math-3,0.8575949367088608
+199,The number of unique visitors for Amazon was more than that of Yahoo in 2010.,item60.png,Salesforce/blip2-flan-t5-xl,0.0
+200,The number of unique visitors for Amazon was more than that of Yahoo in 2010.,item60.png,Salesforce/blip2-flan-t5-xxl,0.0
+201,The number of unique visitors for Amazon was more than that of Yahoo in 2010.,item60.png,Salesforce/blip2-opt-2.7b,0.0
+202,The number of unique visitors for Amazon was more than that of Yahoo in 2010.,item60.png,llava-hf/llava-1.5-7b-hf,0.0
+203,The ratio of the cost of Soda to the cost of Water in Orlando is higher than that of Washington D.C.,item15.png,GPT-4V,1.0
+204,The ratio of the cost of Soda to the cost of Water in Orlando is higher than that of Washington D.C.,item15.png,Human/Math-2-1,0.737885462555066
+205,The ratio of the cost of Soda to the cost of Water in Orlando is higher than that of Washington D.C.,item15.png,Human/Math-3,0.7484177215189873
+206,The ratio of the cost of Soda to the cost of Water in Orlando is higher than that of Washington D.C.,item15.png,Salesforce/blip2-flan-t5-xl,0.0
+207,The ratio of the cost of Soda to the cost of Water in Orlando is higher than that of Washington D.C.,item15.png,Salesforce/blip2-flan-t5-xxl,0.0
+208,The ratio of the cost of Soda to the cost of Water in Orlando is higher than that of Washington D.C.,item15.png,Salesforce/blip2-opt-2.7b,1.0
+209,The ratio of the cost of Soda to the cost of Water in Orlando is higher than that of Washington D.C.,item15.png,llava-hf/llava-1.5-7b-hf,0.0
+210,The weights for males with the height of 188 cm are all the same.,item32.png,GPT-4V,1.0
+211,The weights for males with the height of 188 cm are all the same.,item32.png,Human/Math-2-1,0.7907488986784141
+212,The weights for males with the height of 188 cm are all the same.,item32.png,Human/Math-3,0.8322784810126582
+213,The weights for males with the height of 188 cm are all the same.,item32.png,Salesforce/blip2-flan-t5-xl,0.0
+214,The weights for males with the height of 188 cm are all the same.,item32.png,Salesforce/blip2-flan-t5-xxl,1.0
+215,The weights for males with the height of 188 cm are all the same.,item32.png,Salesforce/blip2-opt-2.7b,0.0
+216,The weights for males with the height of 188 cm are all the same.,item32.png,llava-hf/llava-1.5-7b-hf,0.1
+217,There is a negative linear relationship between the height and the weight of the 85 males.,item31.png,GPT-4V,1.0
+218,There is a negative linear relationship between the height and the weight of the 85 males.,item31.png,Human/Math-2-1,0.6894273127753304
+219,There is a negative linear relationship between the height and the weight of the 85 males.,item31.png,Human/Math-3,0.8765822784810127
+220,There is a negative linear relationship between the height and the weight of the 85 males.,item31.png,Salesforce/blip2-flan-t5-xl,0.0
+221,There is a negative linear relationship between the height and the weight of the 85 males.,item31.png,Salesforce/blip2-flan-t5-xxl,1.0
+222,There is a negative linear relationship between the height and the weight of the 85 males.,item31.png,Salesforce/blip2-opt-2.7b,0.0
+223,There is a negative linear relationship between the height and the weight of the 85 males.,item31.png,llava-hf/llava-1.5-7b-hf,0.0
+224,What is the approval rating of Republicans among the people who have the education level of Postgraduate Study?,item16.png,GPT-4V,1.0
+225,What is the approval rating of Republicans among the people who have the education level of Postgraduate Study?,item16.png,Human/Math-2-1,0.552863436123348
+226,What is the approval rating of Republicans among the people who have the education level of Postgraduate Study?,item16.png,Human/Math-3,0.6360759493670886
+227,What is the approval rating of Republicans among the people who have the education level of Postgraduate Study?,item16.png,Salesforce/blip2-flan-t5-xl,0.5
+228,What is the approval rating of Republicans among the people who have the education level of Postgraduate Study?,item16.png,Salesforce/blip2-flan-t5-xxl,0.0
+229,What is the approval rating of Republicans among the people who have the education level of Postgraduate Study?,item16.png,Salesforce/blip2-opt-2.7b,0.0
+230,What is the approval rating of Republicans among the people who have the education level of Postgraduate Study?,item16.png,llava-hf/llava-1.5-7b-hf,0.0
+231,What is the average internet speed in Japan?,item6.png,GPT-4V,0.0
+232,What is the average internet speed in Japan?,item6.png,Human/Math-2-1,0.8414096916299559
+233,What is the average internet speed in Japan?,item6.png,Human/Math-3,0.8765822784810127
+234,What is the average internet speed in Japan?,item6.png,Salesforce/blip2-flan-t5-xl,0.0
+235,What is the average internet speed in Japan?,item6.png,Salesforce/blip2-flan-t5-xxl,0.0
+236,What is the average internet speed in Japan?,item6.png,Salesforce/blip2-opt-2.7b,0.0
+237,What is the average internet speed in Japan?,item6.png,llava-hf/llava-1.5-7b-hf,0.5
+238,What is the cost of peanuts in Las Vegas?,item10.png,GPT-4V,0.0
+239,What is the cost of peanuts in Las Vegas?,item10.png,Human/Math-2-1,0.9008810572687225
+240,What is the cost of peanuts in Las Vegas?,item10.png,Human/Math-3,0.9098101265822784
+241,What is the cost of peanuts in Las Vegas?,item10.png,Salesforce/blip2-flan-t5-xl,1.0
+242,What is the cost of peanuts in Las Vegas?,item10.png,Salesforce/blip2-flan-t5-xxl,1.0
+243,What is the cost of peanuts in Las Vegas?,item10.png,Salesforce/blip2-opt-2.7b,0.3
+244,What is the cost of peanuts in Las Vegas?,item10.png,llava-hf/llava-1.5-7b-hf,1.0
+245,What is the education level of people in which the Democrats have the lowest approval rating?,item17.png,GPT-4V,0.0
+246,What is the education level of people in which the Democrats have the lowest approval rating?,item17.png,Human/Math-2-1,0.8898678414096917
+247,What is the education level of people in which the Democrats have the lowest approval rating?,item17.png,Human/Math-3,0.8623417721518988
+248,What is the education level of people in which the Democrats have the lowest approval rating?,item17.png,Salesforce/blip2-flan-t5-xl,0.0
+249,What is the education level of people in which the Democrats have the lowest approval rating?,item17.png,Salesforce/blip2-flan-t5-xxl,0.0
+250,What is the education level of people in which the Democrats have the lowest approval rating?,item17.png,Salesforce/blip2-opt-2.7b,0.0
+251,What is the education level of people in which the Democrats have the lowest approval rating?,item17.png,llava-hf/llava-1.5-7b-hf,0.0
+252,What is the height for a person who lies outside the others the most?,item29.png,GPT-4V,0.0
+253,What is the height for a person who lies outside the others the most?,item29.png,Human/Math-2-1,0.4801762114537445
+254,What is the height for a person who lies outside the others the most?,item29.png,Human/Math-3,0.5680379746835443
+255,What is the height for a person who lies outside the others the most?,item29.png,Salesforce/blip2-flan-t5-xl,0.0
+256,What is the height for a person who lies outside the others the most?,item29.png,Salesforce/blip2-flan-t5-xxl,0.0
+257,What is the height for a person who lies outside the others the most?,item29.png,Salesforce/blip2-opt-2.7b,0.5
+258,What is the height for a person who lies outside the others the most?,item29.png,llava-hf/llava-1.5-7b-hf,0.0
+259,What is the height for the tallest person among the 85 males?,item27.png,GPT-4V,0.0
+260,What is the height for the tallest person among the 85 males?,item27.png,Human/Math-2-1,0.8039647577092511
+261,What is the height for the tallest person among the 85 males?,item27.png,Human/Math-3,0.8670886075949367
+262,What is the height for the tallest person among the 85 males?,item27.png,Salesforce/blip2-flan-t5-xl,0.0
+263,What is the height for the tallest person among the 85 males?,item27.png,Salesforce/blip2-flan-t5-xxl,1.0
+264,What is the height for the tallest person among the 85 males?,item27.png,Salesforce/blip2-opt-2.7b,0.0
+265,What is the height for the tallest person among the 85 males?,item27.png,llava-hf/llava-1.5-7b-hf,1.0
+266,What is the range in weight for the 85 males?,item28.png,GPT-4V,0.0
+267,What is the range in weight for the 85 males?,item28.png,Human/Math-2-1,0.7555066079295154
+268,What is the range in weight for the 85 males?,item28.png,Human/Math-3,0.7816455696202531
+269,What is the range in weight for the 85 males?,item28.png,Salesforce/blip2-flan-t5-xl,0.0
+270,What is the range in weight for the 85 males?,item28.png,Salesforce/blip2-flan-t5-xxl,0.0
+271,What is the range in weight for the 85 males?,item28.png,Salesforce/blip2-opt-2.7b,0.0
+272,What is the range in weight for the 85 males?,item28.png,llava-hf/llava-1.5-7b-hf,0.0
+273,What is the range of the average internet speed in Asia?,item8.png,GPT-4V,1.0
+274,What is the range of the average internet speed in Asia?,item8.png,Human/Math-2-1,0.7290748898678414
+275,What is the range of the average internet speed in Asia?,item8.png,Human/Math-3,0.7848101265822784
+276,What is the range of the average internet speed in Asia?,item8.png,Salesforce/blip2-flan-t5-xl,0.0
+277,What is the range of the average internet speed in Asia?,item8.png,Salesforce/blip2-flan-t5-xxl,0.0
+278,What is the range of the average internet speed in Asia?,item8.png,llava-hf/llava-1.5-7b-hf,0.0
+279,What is the range of the total length of the metro systems?,item49.png,GPT-4V,1.0
+280,What is the range of the total length of the metro systems?,item49.png,Human/Math-2-1,0.6850220264317181
+281,What is the range of the total length of the metro systems?,item49.png,Human/Math-3,0.7531645569620253
+282,What is the range of the total length of the metro systems?,item49.png,Salesforce/blip2-flan-t5-xl,0.0
+283,What is the range of the total length of the metro systems?,item49.png,Salesforce/blip2-flan-t5-xxl,0.0
+284,What is the range of the total length of the metro systems?,item49.png,Salesforce/blip2-opt-2.7b,0.0
+285,What is the range of the total length of the metro systems?,item49.png,llava-hf/llava-1.5-7b-hf,0.0
+286,What is the rating that the people have rated the taxi the most?,item23.png,GPT-4V,1.0
+287,What is the rating that the people have rated the taxi the most?,item23.png,Human/Math-2-1,0.9427312775330396
+288,What is the rating that the people have rated the taxi the most?,item23.png,Human/Math-3,0.9477848101265823
+289,What is the rating that the people have rated the taxi the most?,item23.png,Salesforce/blip2-flan-t5-xl,0.0
+290,What is the rating that the people have rated the taxi the most?,item23.png,Salesforce/blip2-flan-t5-xxl,0.0
+291,What is the rating that the people have rated the taxi the most?,item23.png,Salesforce/blip2-opt-2.7b,0.0
+292,What is the rating that the people have rated the taxi the most?,item23.png,llava-hf/llava-1.5-7b-hf,0.0
+293,What is the total length of the metro system in Beijing?,item47.png,GPT-4V,1.0
+294,What is the total length of the metro system in Beijing?,item47.png,Human/Math-2-1,0.8546255506607929
+295,What is the total length of the metro system in Beijing?,item47.png,Human/Math-3,0.8465189873417721
+296,What is the total length of the metro system in Beijing?,item47.png,Salesforce/blip2-flan-t5-xl,1.0
+297,What is the total length of the metro system in Beijing?,item47.png,Salesforce/blip2-flan-t5-xxl,0.0
+298,What is the total length of the metro system in Beijing?,item47.png,Salesforce/blip2-opt-2.7b,0.4
+299,What is the total length of the metro system in Beijing?,item47.png,llava-hf/llava-1.5-7b-hf,0.0
+300,What is the weight for the person who is 165.1 cm tall?,item26.png,GPT-4V,0.0
+301,What is the weight for the person who is 165.1 cm tall?,item26.png,Human/Math-2-1,0.8281938325991189
+302,What is the weight for the person who is 165.1 cm tall?,item26.png,Human/Math-3,0.8544303797468354
+303,What is the weight for the person who is 165.1 cm tall?,item26.png,Salesforce/blip2-flan-t5-xl,0.5
+304,What is the weight for the person who is 165.1 cm tall?,item26.png,Salesforce/blip2-flan-t5-xxl,0.0
+305,What is the weight for the person who is 165.1 cm tall?,item26.png,Salesforce/blip2-opt-2.7b,0.0
+306,What is the weight for the person who is 165.1 cm tall?,item26.png,llava-hf/llava-1.5-7b-hf,0.7
+307,What was the average price of a pound of coffee beans in September 2013?,item35.png,GPT-4V,1.0
+308,What was the average price of a pound of coffee beans in September 2013?,item35.png,Human/Math-2-1,0.7224669603524229
+309,What was the average price of a pound of coffee beans in September 2013?,item35.png,Human/Math-3,0.7515822784810127
+310,What was the average price of a pound of coffee beans in September 2013?,item35.png,Salesforce/blip2-flan-t5-xl,1.0
+311,What was the average price of a pound of coffee beans in September 2013?,item35.png,Salesforce/blip2-flan-t5-xxl,0.0
+312,What was the average price of a pound of coffee beans in September 2013?,item35.png,Salesforce/blip2-opt-2.7b,0.5
+313,What was the average price of a pound of coffee beans in September 2013?,item35.png,llava-hf/llava-1.5-7b-hf,0.0
+314,What was the number of girls named 'Amelia' in 2010 in the UK?,item40.png,GPT-4V,1.0
+315,What was the number of girls named 'Amelia' in 2010 in the UK?,item40.png,Human/Math-2-1,0.21365638766519823
+316,What was the number of girls named 'Amelia' in 2010 in the UK?,item40.png,Human/Math-3,0.2848101265822785
+317,What was the number of girls named 'Amelia' in 2010 in the UK?,item40.png,Salesforce/blip2-flan-t5-xl,0.0
+318,What was the number of girls named 'Amelia' in 2010 in the UK?,item40.png,Salesforce/blip2-flan-t5-xxl,0.0
+319,What was the number of girls named 'Amelia' in 2010 in the UK?,item40.png,Salesforce/blip2-opt-2.7b,0.0
+320,What was the number of girls named 'Amelia' in 2010 in the UK?,item40.png,llava-hf/llava-1.5-7b-hf,0.0
+321,What was the price of a barrel of oil in February 2015?,item1.png,GPT-4V,1.0
+322,What was the price of a barrel of oil in February 2015?,item1.png,Human/Math-2-1,0.8612334801762115
+323,What was the price of a barrel of oil in February 2015?,item1.png,Human/Math-3,0.8876582278481012
+324,What was the price of a barrel of oil in February 2015?,item1.png,Salesforce/blip2-flan-t5-xl,1.0
+325,What was the price of a barrel of oil in February 2015?,item1.png,Salesforce/blip2-flan-t5-xxl,0.0
+326,What was the price of a barrel of oil in February 2015?,item1.png,Salesforce/blip2-opt-2.7b,0.0
+327,What was the price of a barrel of oil in February 2015?,item1.png,llava-hf/llava-1.5-7b-hf,1.0
+328,What was the price range of a barrel of oil in 2015?,item3.png,GPT-4V,1.0
+329,What was the price range of a barrel of oil in 2015?,item3.png,Human/Math-2-1,0.724669603524229
+330,What was the price range of a barrel of oil in 2015?,item3.png,Human/Math-3,0.7879746835443038
+331,What was the price range of a barrel of oil in 2015?,item3.png,Salesforce/blip2-flan-t5-xl,0.0
+332,What was the price range of a barrel of oil in 2015?,item3.png,Salesforce/blip2-flan-t5-xxl,1.0
+333,What was the price range of a barrel of oil in 2015?,item3.png,Salesforce/blip2-opt-2.7b,0.0
+334,What was the price range of a barrel of oil in 2015?,item3.png,llava-hf/llava-1.5-7b-hf,1.0
+335,What was the range of the average price of a pound of coffee beans between January 2013 and December 2014?,item37.png,GPT-4V,0.2
+336,What was the range of the average price of a pound of coffee beans between January 2013 and December 2014?,item37.png,Human/Math-2-1,0.30616740088105726
+337,What was the range of the average price of a pound of coffee beans between January 2013 and December 2014?,item37.png,Human/Math-3,0.3623417721518987
+338,What was the range of the average price of a pound of coffee beans between January 2013 and December 2014?,item37.png,Salesforce/blip2-flan-t5-xl,1.0
+339,What was the range of the average price of a pound of coffee beans between January 2013 and December 2014?,item37.png,Salesforce/blip2-opt-2.7b,0.0
+340,What was the range of the average price of a pound of coffee beans between January 2013 and December 2014?,item37.png,llava-hf/llava-1.5-7b-hf,0.0
+341,What was the unemployment rate for Indiana (IN) in 2015?,item55.png,Human/Math-2-1,0.3590308370044053
+342,What was the unemployment rate for Indiana (IN) in 2015?,item55.png,Human/Math-3,0.37341772151898733
+343,What was the unemployment rate for Indiana (IN) in 2015?,item55.png,Salesforce/blip2-flan-t5-xl,0.0
+344,What was the unemployment rate for Indiana (IN) in 2015?,item55.png,Salesforce/blip2-flan-t5-xxl,1.0
+345,What was the unemployment rate for Indiana (IN) in 2015?,item55.png,llava-hf/llava-1.5-7b-hf,0.4
+346,When was the average price of a pound of coffee beans at minimum?,item36.png,GPT-4V,0.0
+347,When was the average price of a pound of coffee beans at minimum?,item36.png,Human/Math-2-1,0.3744493392070485
+348,When was the average price of a pound of coffee beans at minimum?,item36.png,Human/Math-3,0.34810126582278483
+349,When was the average price of a pound of coffee beans at minimum?,item36.png,Salesforce/blip2-flan-t5-xl,0.0
+350,When was the average price of a pound of coffee beans at minimum?,item36.png,Salesforce/blip2-flan-t5-xxl,0.0
+351,When was the average price of a pound of coffee beans at minimum?,item36.png,Salesforce/blip2-opt-2.7b,0.6
+352,When was the average price of a pound of coffee beans at minimum?,item36.png,llava-hf/llava-1.5-7b-hf,0.8
+353,Which city's metro system does lie outside the relationship between the total system length and the number of stations most?,item50.png,GPT-4V,1.0
+354,Which city's metro system does lie outside the relationship between the total system length and the number of stations most?,item50.png,Human/Math-2-1,0.7004405286343612
+355,Which city's metro system does lie outside the relationship between the total system length and the number of stations most?,item50.png,Human/Math-3,0.759493670886076
+356,Which city's metro system does lie outside the relationship between the total system length and the number of stations most?,item50.png,Salesforce/blip2-flan-t5-xl,0.0
+357,Which city's metro system does lie outside the relationship between the total system length and the number of stations most?,item50.png,Salesforce/blip2-flan-t5-xxl,0.0
+358,Which city's metro system does lie outside the relationship between the total system length and the number of stations most?,item50.png,Salesforce/blip2-opt-2.7b,0.0
+359,Which city's metro system does lie outside the relationship between the total system length and the number of stations most?,item50.png,llava-hf/llava-1.5-7b-hf,0.0
+360,Which city's metro system has the largest number of stations?,item48.png,GPT-4V,1.0
+361,Which city's metro system has the largest number of stations?,item48.png,Human/Math-2-1,0.7577092511013216
+362,Which city's metro system has the largest number of stations?,item48.png,Human/Math-3,0.819620253164557
+363,Which city's metro system has the largest number of stations?,item48.png,Salesforce/blip2-flan-t5-xl,0.0
+364,Which city's metro system has the largest number of stations?,item48.png,Salesforce/blip2-flan-t5-xxl,0.0
+365,Which city's metro system has the largest number of stations?,item48.png,Salesforce/blip2-opt-2.7b,0.0
+366,Which city's metro system has the largest number of stations?,item48.png,llava-hf/llava-1.5-7b-hf,0.0
