@@ -23,7 +23,7 @@ Directory Structure
 
 Each folder contains a README.md file that elaborates further on its contents. Below are the general descriptions of each folder:
 
-`admin` contain describes author contributions
+`admin` describes author contributions
 
 `analysis` contains all python scripts and notebooks used to  calculate statistics and generate figures reported in the paper.
 
