@@ -6,6 +6,7 @@ import numpy as np
 from sentence_transformers import util
 import torch
 from torch import tensor
+import os
 
 AWS_PREFIX = "https://data-visualization-benchmark.s3.us-west-2.amazonaws.com"
 
