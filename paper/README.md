@@ -1,4 +1,4 @@
-Two corrections have been made in the paper `vlm_datavis_benchmark_cogsci2024.pdf` and have been listed under `vlm_datavis_benchmark_corrected_cogsci2024.pdf`.
+Two errors have been identified and corrected in the original version of the paper `vlm_datavis_benchmark_cogsci2024.pdf`. The corrected version can be found in the following pdf: `vlm_datavis_benchmark_corrected_cogsci2024.pdf`.
 
 ## Errata
 
