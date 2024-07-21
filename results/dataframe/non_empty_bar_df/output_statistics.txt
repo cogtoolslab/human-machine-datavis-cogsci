@@ -1,0 +1,28 @@
+NA Count 0, Non NA Count 130, Raw NA Count 130, Raw Non NA Count 0
+('llava-hf/llava-1.5-7b-hf', '#f58518', '#f9b574') ggr
+NA Count 0, Non NA Count 530, Raw NA Count 472, Raw Non NA Count 58
+('llava-hf/llava-1.5-7b-hf', '#f58518', '#f9b574') vlat
+NA Count 0, Non NA Count 3840, Raw NA Count 2800, Raw Non NA Count 1040
+('llava-hf/llava-1.5-7b-hf', '#f58518', '#f9b574') holf
+../results/bar_plots/response_bar_llava-hf-llava-1.5-7b-hf.pdf
+NA Count 0, Non NA Count 130, Raw NA Count 2, Raw Non NA Count 128
+('Salesforce/blip2-flan-t5-xl', '#5ba3cf', '#5ba3cf') ggr
+NA Count 0, Non NA Count 530, Raw NA Count 0, Raw Non NA Count 530
+('Salesforce/blip2-flan-t5-xl', '#5ba3cf', '#5ba3cf') vlat
+NA Count 21, Non NA Count 3819, Raw NA Count 47, Raw Non NA Count 3793
+('Salesforce/blip2-flan-t5-xl', '#5ba3cf', '#5ba3cf') holf
+../results/bar_plots/response_bar_Salesforce-blip2-flan-t5-xl.pdf
+NA Count 0, Non NA Count 130, Raw NA Count 5, Raw Non NA Count 125
+('Salesforce/blip2-flan-t5-xxl', '#4c78a8', '#4c78a8') ggr
+NA Count 0, Non NA Count 530, Raw NA Count 0, Raw Non NA Count 530
+('Salesforce/blip2-flan-t5-xxl', '#4c78a8', '#4c78a8') vlat
+NA Count 7, Non NA Count 3833, Raw NA Count 8, Raw Non NA Count 3832
+('Salesforce/blip2-flan-t5-xxl', '#4c78a8', '#4c78a8') holf
+../results/bar_plots/response_bar_Salesforce-blip2-flan-t5-xxl.pdf
+NA Count 1, Non NA Count 129, Raw NA Count 6, Raw Non NA Count 124
+('GPT-4V', '#b85536', '#b85536') ggr
+NA Count 0, Non NA Count 530, Raw NA Count 37, Raw Non NA Count 493
+('GPT-4V', '#b85536', '#b85536') vlat
+NA Count 2, Non NA Count 3838, Raw NA Count 44, Raw Non NA Count 3796
+('GPT-4V', '#b85536', '#b85536') holf
+../results/bar_plots/response_bar_GPT-4V.pdf
