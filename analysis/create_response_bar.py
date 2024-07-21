@@ -1,12 +1,6 @@
-from evaluation_metrics import EvaluationMetrics
-from joblib import Parallel, delayed
 import pandas as pd
 import altair as alt
 import numpy as np
-import ast
-from sentence_transformers import util
-import torch
-from torch import tensor
 import os
 
 AWS_PREFIX = "https://data-visualization-benchmark.s3.us-west-2.amazonaws.com"
@@ -37,7 +31,7 @@ class ResponseBar:
             return r
 
         model_response_url = f'{AWS_PREFIX}/{test_type}/responses/{prompt_type}/{top_p_dir}/{temperature_dir}/model_responses.csv'
-        self.model_responses = pd.read_csv(model_response_url)
+        self.model_responses = pd.read_csv(model_response_url, low_memory=False)
         self.model_responses = self.model_responses.rename({
             "imageFile": "image_file"
         }, axis=1)
@@ -79,10 +73,10 @@ class ResponseBar:
             'count': [raw_non_na_count / (raw_na_count + raw_non_na_count),
                     non_na_count / (na_count + non_na_count)]
         })
-        _dir = f"./non_null_df/{self.model_config[0].replace("/", "_")}"
+        _dir = f"./data/non_null_df/{self.model_config[0].replace("/", "_")}"
         if not os.path.exists(_dir):
             os.makedirs(_dir)
-        # data.to_csv(f"{_dir}/{self.test_type}.csv")
+        data.to_csv(f"{_dir}/{self.test_type}.csv")
 
         print(f"NA Count {na_count}, Non NA Count {non_na_count}, Raw NA Count {raw_na_count}, Raw Non NA Count {raw_non_na_count}")
 
@@ -113,26 +107,21 @@ def non_empty_response_bar():
         {'model': "liuhaotian/llava-v1.6-34b",  'top_p': 'p1', 'temp': 't04'}, 
         {'model': "google/pix2struct-chartqa-base",  'top_p': 'p08', 'temp': 't1'},
         {'model': "google/matcha-chartqa",  'top_p': 'p04', 'temp': 't1'},
-        {'model': "GPT-4V",  'top_p': 'p1', 'temp': 't02'}, # need to run -- 6x more
+        {'model': "GPT-4V",  'top_p': 'p1', 'temp': 't02'},
     ]
 
     all_charts = []
     for model_config in model_configs:
         model_charts = []
         model = model_config['model']
-        top_p_dir = model_config['top_p']
-        temperature_dir = model_config['temp']
         for test_type in [
             "ggr",
             "vlat",
             "holf",
-            'calvi-trick',
-            'calvi-standard',
-            'holf2',
-            'chartqa-val',
-            'chartqa-test'
-            'chartqa-test-continuous',
         ]:   
+            top_p_dir = 'p04'
+            temperature_dir = 't1'
+
             response_bar = ResponseBar(
                 test_type=test_type, 
                 prompt_type=prompt_type,
@@ -146,10 +135,11 @@ def non_empty_response_bar():
         
         chart = alt.hconcat(*model_charts, spacing=2)
         all_charts.append(chart)
-        file_name = f"./bar_plots/response_bar_{model[0].replace("/", "-")}.pdf"
-        print(file_name)
-        chart.save(file_name)
-    # alt.hconcat(*all_charts).save("./bar_plots/response_bar_all_models.pdf")
+        # file_name = f"./raw_figures/figue1_response_bar_{model[0].replace("/", "-")}.pdf"
+        # print(file_name)
+        # chart.save(file_name)
+
+    alt.hconcat(*all_charts).save("../plots/figure1_response_bar_all_models.pdf")
 
 if __name__ == '__main__':
     non_empty_response_bar()
